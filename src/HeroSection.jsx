@@ -22,7 +22,7 @@ const HeroSection = ({ scrollToSection }) => {
           <div className="relative inline-block">
             <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 mx-auto rounded-full overflow-hidden border-4 border-purple-400/70 shadow-2xl shadow-purple-500/40">
               <img
-                src="/graduation.jpeg"
+                src="/grad.jpeg"
                 alt="Aron Kipkorir Bii"
                 className="w-full h-full object-cover"
                 onError={(e) => {
