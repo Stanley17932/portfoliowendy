@@ -123,7 +123,7 @@ const AboutSection = () => {
         setCurrentCategoryIndex((prev) => (prev + 1) % categories.length);
         setIsVisible(true);
       }, 400);
-    }, 8000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [categories.length]);
@@ -200,16 +200,16 @@ const AboutSection = () => {
         <div className="text-center mb-16 sm:mb-20">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-purple-500/30">
             <Sparkles className="w-4 h-4 text-purple-400" />
-            <span className="text-sm text-purple-300 font-medium">Full-Stack Developer</span>
+            <span className="text-xs text-purple-300 font-medium">Full-Stack Developer</span>
           </div>
           
-          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 sm:mb-8">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8">
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
               About Me
             </span>
           </h2>
           
-          <p className="text-xl sm:text-2xl text-white/70 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/70 max-w-4xl mx-auto leading-relaxed">
             Transforming ideas into{' '}
             <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text font-semibold">
               digital experiences
@@ -224,8 +224,8 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-8 sm:p-10 border border-white/20 shadow-2xl">
               <div className="text-center mb-8">
-                <div className="inline-flex items-center gap-3 text-2xl sm:text-3xl font-bold text-white mb-4">
-                  <Heart className="w-8 h-8 text-pink-400 animate-pulse" />
+                <div className="inline-flex items-center gap-3 text-xl sm:text-2xl font-bold text-white mb-4">
+                  <Heart className="w-7 h-7 text-pink-400 animate-pulse" />
                   Looking for amazing
                 </div>
               </div>
@@ -234,11 +234,11 @@ const AboutSection = () => {
                 <div className={`bg-gradient-to-r ${currentCategory.bgGradient} rounded-2xl p-6 mb-6 border border-white/10`}>
                   <div className="flex items-center justify-center space-x-4 mb-6">
                     <div className={`${currentCategory.color} p-4 rounded-xl bg-white/10 backdrop-blur-sm shadow-lg transform hover:scale-110 transition-all duration-300`}>
-                      <IconComponent size={32} />
+                      <IconComponent size={28} />
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl mb-2">{currentCategory.emoji}</div>
-                      <h3 className="text-2xl font-bold text-white">{currentCategory.title}</h3>
+                      <div className="text-2xl mb-2">{currentCategory.emoji}</div>
+                      <h3 className="text-xl font-bold text-white">{currentCategory.title}</h3>
                     </div>
                   </div>
                   
@@ -250,15 +250,15 @@ const AboutSection = () => {
                         style={{ animationDelay: `${index * 100}ms` }}
                       >
                         <CheckCircle className="w-4 h-4 text-green-400 group-hover:scale-110 transition-transform duration-300" />
-                        <span className="text-sm font-medium">{item}</span>
+                        <span className="text-xs font-medium">{item}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 <div className="text-center">
-                  <div className="inline-flex items-center gap-3 text-2xl sm:text-3xl font-bold text-transparent bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text">
-                    <Target className="w-8 h-8 text-green-400" />
+                  <div className="inline-flex items-center gap-3 text-xl sm:text-2xl font-bold text-transparent bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text">
+                    <Target className="w-7 h-7 text-green-400" />
                     You found me!
                   </div>
                 </div>
@@ -282,7 +282,7 @@ const AboutSection = () => {
             </div>
             
             <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-2xl">
-              <p className="text-lg sm:text-xl text-white/80 leading-relaxed">
+              <p className="text-base sm:text-lg text-white/80 leading-relaxed">
                 I'm a passionate{' '}
                 <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text font-semibold">
                   software craftsman
@@ -303,8 +303,8 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-8 sm:p-10 border border-white/20 shadow-2xl">
               <div className="flex items-center gap-3 mb-8">
-                <Lightbulb className="w-8 h-8 text-yellow-400" />
-                <h3 className="text-2xl sm:text-3xl font-bold text-white">My Arsenal</h3>
+                <Lightbulb className="w-7 h-7 text-yellow-400" />
+                <h3 className="text-xl sm:text-2xl font-bold text-white">My Arsenal</h3>
               </div>
               
               <div className="space-y-6">
@@ -316,11 +316,11 @@ const AboutSection = () => {
                   >
                     <div className="flex justify-between items-center mb-3">
                       <div className="flex items-center gap-3">
-                        <span className="text-2xl">{tech.icon}</span>
-                        <span className="text-white font-semibold text-lg">{tech.name}</span>
+                        <span className="text-xl">{tech.icon}</span>
+                        <span className="text-white font-semibold text-base">{tech.name}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="text-white/60 text-sm font-medium">{tech.level}%</span>
+                        <span className="text-white/60 text-xs font-medium">{tech.level}%</span>
                         <Star className="w-4 h-4 text-yellow-400" />
                       </div>
                     </div>
@@ -349,9 +349,9 @@ const AboutSection = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-3 mb-6">
               <Shield className="w-8 h-8 text-blue-400" />
-              <h3 className="text-3xl sm:text-4xl font-bold text-white">What I Deliver</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold text-white">What I Deliver</h3>
             </div>
-            <p className="text-lg text-white/60 max-w-3xl mx-auto">
+            <p className="text-base text-white/60 max-w-3xl mx-auto">
               Premium services crafted with passion, delivered with precision
             </p>
           </div>
@@ -379,11 +379,11 @@ const AboutSection = () => {
                       <ArrowRight className={`w-5 h-5 text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`} />
                     </div>
                     
-                    <h4 className="text-white font-bold text-xl mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
+                    <h4 className="text-white font-bold text-lg mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                       {service.title}
                     </h4>
                     
-                    <p className="text-white/70 text-sm leading-relaxed mb-4 group-hover:text-white/80 transition-all duration-300">
+                    <p className="text-white/70 text-xs leading-relaxed mb-4 group-hover:text-white/80 transition-all duration-300">
                       {service.description}
                     </p>
                     
