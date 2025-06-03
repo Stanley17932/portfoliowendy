@@ -77,20 +77,7 @@ const AboutSection = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-8">
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/10 hover:bg-white/10 transition-colors">
-                <h4 className="text-purple-400 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Experience</h4>
-                <p className="text-white/80 text-sm sm:text-base">4+ Years</p>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/10 hover:bg-white/10 transition-colors">
-                <h4 className="text-purple-400 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Projects</h4>
-                <p className="text-white/80 text-sm sm:text-base">15+ Completed</p>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/10 hover:bg-white/10 transition-colors col-span-2 sm:col-span-1">
-                <h4 className="text-purple-400 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Clients</h4>
-                <p className="text-white/80 text-sm sm:text-base">10+ Happy</p>
-              </div>
-            </div>
+
           </div>
           
           <div className="space-y-6 sm:space-y-8">
