@@ -55,7 +55,7 @@ const HeroSection = ({ scrollToSection }) => {
           {/* Enhanced description with better contrast */}
           <div className="bg-black/20 backdrop-blur-sm rounded-xl px-6 py-4 mb-8 sm:mb-12 max-w-xs sm:max-w-lg lg:max-w-2xl mx-auto">
             <p className="text-sm sm:text-base lg:text-lg text-white/90 leading-relaxed">
-              Creating beautiful designs and powerful web applications. Specialized in CorelDRAW design and React-Flask development.
+              Creating beautiful designs and powerful web applications. Specialized in Web Development and Graphic design.
             </p>
           </div>
         </div>
