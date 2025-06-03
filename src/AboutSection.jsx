@@ -125,23 +125,6 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="mt-12 sm:mt-16 text-center">
-          <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl p-6 sm:p-8 border border-white/10">
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Ready to Work Together?</h3>
-            <p className="text-white/70 mb-6 sm:mb-8 text-sm sm:text-base max-w-2xl mx-auto">
-              Let's build something amazing together. I'm available for freelance projects, 
-              consulting, and full-time opportunities.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
-              <button className="w-full sm:w-auto bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
-                Get In Touch
-              </button>
-              <button className="w-full sm:w-auto border border-white/20 text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300">
-                View Portfolio
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
