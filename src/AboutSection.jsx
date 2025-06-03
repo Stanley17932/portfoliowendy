@@ -1,64 +1,157 @@
 import React from 'react';
-import { Palette, Globe, Code } from 'lucide-react';
+import { Code, Database, Globe, Terminal, Layers, Smartphone } from 'lucide-react';
 
 const AboutSection = () => {
+  const technologies = [
+    { name: 'React', level: 90, color: 'bg-blue-400' },
+    { name: 'Flask', level: 85, color: 'bg-green-400' },
+    { name: 'JavaScript', level: 88, color: 'bg-yellow-400' },
+    { name: 'Python', level: 92, color: 'bg-purple-400' },
+    { name: 'HTML/CSS', level: 95, color: 'bg-orange-400' },
+    { name: 'SQL', level: 80, color: 'bg-pink-400' }
+  ];
+
+  const services = [
+    {
+      icon: Globe,
+      title: 'Frontend Development',
+      description: 'Modern React applications with responsive design and seamless user experiences',
+      color: 'text-blue-400'
+    },
+    {
+      icon: Terminal,
+      title: 'Backend Development',
+      description: 'Robust Flask APIs with secure authentication and efficient data processing',
+      color: 'text-green-400'
+    },
+    {
+      icon: Database,
+      title: 'Database Design',
+      description: 'Optimized database architecture with MySQL, PostgreSQL, and SQLite',
+      color: 'text-purple-400'
+    },
+    {
+      icon: Layers,
+      title: 'Full-Stack Solutions',
+      description: 'Complete web applications from concept to deployment',
+      color: 'text-orange-400'
+    },
+    {
+      icon: Smartphone,
+      title: 'Responsive Design',
+      description: 'Mobile-first approach ensuring perfect functionality across all devices',
+      color: 'text-pink-400'
+    },
+    {
+      icon: Code,
+      title: 'API Integration',
+      description: 'Seamless integration with third-party services and RESTful APIs',
+      color: 'text-cyan-400'
+    }
+  ];
+
   return (
-    <section id="about" className="py-20 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
             About Me
           </h2>
+          <p className="text-lg sm:text-xl text-white/60 max-w-3xl mx-auto">
+            Full-Stack Software Developer specializing in modern web technologies
+          </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-16">
           <div className="space-y-6">
-            <p className="text-lg text-white/80 leading-relaxed">
-              I'm a passionate soft developer and graphic designer based in Kenya. 
-              I specialize in creating visually stunning graphics using CorelDRAW and building robust web applications 
-              with modern technologies.
-            </p>
-            <p className="text-lg text-white/80 leading-relaxed">
-              My expertise spans from brand identity design to full-stack web development, allowing me to deliver 
-              comprehensive digital solutions. I'm currently available for freelance projects and collaborations.
-            </p>
+            <div className="space-y-4 sm:space-y-6">
+              <p className="text-base sm:text-lg text-white/80 leading-relaxed">
+                I'm a passionate software developer based in Kenya with expertise in building scalable web applications 
+                using React for frontend and Flask for backend development. My focus is on creating efficient, 
+                user-friendly solutions that solve real-world problems.
+              </p>
+              <p className="text-base sm:text-lg text-white/80 leading-relaxed">
+                With a strong foundation in both frontend and backend technologies, I deliver complete digital solutions 
+                from database design to user interface implementation. I'm currently available for freelance projects 
+                and full-time opportunities.
+              </p>
+            </div>
             
-            <div className="grid grid-cols-2 gap-4 mt-8">
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
-                <h4 className="text-purple-400 font-semibold mb-2">Experience</h4>
-                <p className="text-white/80">1+ Years</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-8">
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/10 hover:bg-white/10 transition-colors">
+                <h4 className="text-purple-400 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Experience</h4>
+                <p className="text-white/80 text-sm sm:text-base">4+ Years</p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
-                <h4 className="text-purple-400 font-semibold mb-2">Projects</h4>
-                <p className="text-white/80">5+ Completed</p>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/10 hover:bg-white/10 transition-colors">
+                <h4 className="text-purple-400 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Projects</h4>
+                <p className="text-white/80 text-sm sm:text-base">15+ Completed</p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/10 hover:bg-white/10 transition-colors col-span-2 sm:col-span-1">
+                <h4 className="text-purple-400 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Clients</h4>
+                <p className="text-white/80 text-sm sm:text-base">10+ Happy</p>
               </div>
             </div>
           </div>
           
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <h3 className="text-2xl font-bold text-white mb-6">What I Do</h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <Palette className="text-purple-400 mt-1" size={20} />
-                <div>
-                  <h4 className="text-white font-semibold">Graphic Design</h4>
-                  <p className="text-white/60">Logo design, brand identity, and visual communications</p>
-                </div>
+          <div className="space-y-6 sm:space-y-8">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Tech Stack</h3>
+              <div className="space-y-3 sm:space-y-4">
+                {technologies.map((tech, index) => (
+                  <div key={index} className="space-y-2">
+                    <div className="flex justify-between items-center">
+                      <span className="text-white font-medium text-sm sm:text-base">{tech.name}</span>
+                      <span className="text-white/60 text-xs sm:text-sm">{tech.level}%</span>
+                    </div>
+                    <div className="w-full bg-white/10 rounded-full h-2">
+                      <div 
+                        className={`${tech.color} h-2 rounded-full transition-all duration-1000 ease-out`}
+                        style={{ width: `${tech.level}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="flex items-start space-x-3">
-                <Globe className="text-blue-400 mt-1" size={20} />
-                <div>
-                  <h4 className="text-white font-semibold">Web Development</h4>
-                  <p className="text-white/60">Full-stack applications with React and Flask</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
+          <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8 text-center">Services I Offer</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {services.map((service, index) => {
+              const IconComponent = service.icon;
+              return (
+                <div key={index} className="group bg-white/5 rounded-xl p-4 sm:p-6 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                  <div className="flex items-start space-x-3 sm:space-x-4">
+                    <div className={`${service.color} p-2 rounded-lg bg-white/10 group-hover:scale-110 transition-transform duration-300`}>
+                      <IconComponent size={20} />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-white font-semibold mb-2 text-sm sm:text-base">{service.title}</h4>
+                      <p className="text-white/60 text-xs sm:text-sm leading-relaxed">{service.description}</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Code className="text-green-400 mt-1" size={20} />
-                <div>
-                  <h4 className="text-white font-semibold">Database Design</h4>
-                  <p className="text-white/60">Efficient database architecture and optimization</p>
-                </div>
-              </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="mt-12 sm:mt-16 text-center">
+          <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl p-6 sm:p-8 border border-white/10">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Ready to Work Together?</h3>
+            <p className="text-white/70 mb-6 sm:mb-8 text-sm sm:text-base max-w-2xl mx-auto">
+              Let's build something amazing together. I'm available for freelance projects, 
+              consulting, and full-time opportunities.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+              <button className="w-full sm:w-auto bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
+                Get In Touch
+              </button>
+              <button className="w-full sm:w-auto border border-white/20 text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300">
+                View Portfolio
+              </button>
             </div>
           </div>
         </div>
@@ -67,4 +160,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection
+export default AboutSection;
