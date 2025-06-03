@@ -1,7 +1,43 @@
-import React from 'react';
-import { Code, Database, Globe, Terminal, Layers, Smartphone } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Code, Database, Globe, Terminal, Layers, Smartphone, Store, Users, Calendar, BarChart, CreditCard, FileText } from 'lucide-react';
 
 const AboutSection = () => {
+  const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const categories = [
+    {
+      title: "E-commerce Solutions",
+      items: ["Online stores", "Payment integration", "Inventory management", "Shopping carts"],
+      icon: Store,
+      color: "text-green-400"
+    },
+    {
+      title: "Business Websites",
+      items: ["Corporate websites", "Portfolio sites", "Landing pages", "Brand showcases"],
+      icon: Globe,
+      color: "text-blue-400"
+    },
+    {
+      title: "Management Systems",
+      items: ["Customer portals", "Booking systems", "Appointment scheduling", "User dashboards"],
+      icon: Users,
+      color: "text-purple-400"
+    },
+    {
+      title: "Data Solutions",
+      items: ["Analytics dashboards", "Reporting systems", "Database design", "Data visualization"],
+      icon: BarChart,
+      color: "text-orange-400"
+    },
+    {
+      title: "Custom Applications",
+      items: ["Web applications", "API development", "Third-party integrations", "Automation tools"],
+      icon: Code,
+      color: "text-cyan-400"
+    }
+  ];
+
   const technologies = [
     { name: 'React', level: 90, color: 'bg-blue-400' },
     { name: 'Flask', level: 85, color: 'bg-green-400' },
@@ -50,6 +86,21 @@ const AboutSection = () => {
     }
   ];
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      setTimeout(() => {
+        setCurrentCategoryIndex((prev) => (prev + 1) % categories.length);
+        setIsVisible(true);
+      }, 300);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [categories.length]);
+
+  const currentCategory = categories[currentCategoryIndex];
+  const IconComponent = currentCategory.icon;
+
   return (
     <section id="about" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -65,19 +116,54 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-16">
           <div className="space-y-6">
             <div className="space-y-4 sm:space-y-6">
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
+                <div className="text-base sm:text-lg text-white/80 leading-relaxed mb-6">
+                  <span className="text-white font-semibold">Are you looking for</span>
+                </div>
+                
+                <div className={`transition-all duration-300 ${isVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'}`}>
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className={`${currentCategory.color} p-3 rounded-lg bg-white/10`}>
+                      <IconComponent size={24} />
+                    </div>
+                    <h3 className="text-xl font-bold text-white">{currentCategory.title}</h3>
+                  </div>
+                  
+                  <div className="grid grid-cols-2 gap-2 mb-6">
+                    {currentCategory.items.map((item, index) => (
+                      <div 
+                        key={index} 
+                        className="text-white/70 text-sm bg-white/5 rounded-lg px-3 py-2 border border-white/10"
+                        style={{ animationDelay: `${index * 100}ms` }}
+                      >
+                        • {item}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="text-base sm:text-lg text-white/80 leading-relaxed">
+                  <span className="text-white font-semibold">Then you are looking for me!</span>
+                </div>
+                
+                <div className="flex justify-center mt-6">
+                  <div className="flex space-x-2">
+                    {categories.map((_, index) => (
+                      <div
+                        key={index}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                          index === currentCategoryIndex ? 'bg-purple-400' : 'bg-white/20'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              
               <p className="text-base sm:text-lg text-white/80 leading-relaxed">
-                I'm a passionate software developer based in Kenya with expertise in building scalable web applications 
-                using React for frontend and Flask for backend development. My focus is on creating efficient, 
-                user-friendly solutions that solve real-world problems.
-              </p>
-              <p className="text-base sm:text-lg text-white/80 leading-relaxed">
-                With a strong foundation in both frontend and backend technologies, I deliver complete digital solutions 
-                from database design to user interface implementation. I'm currently available for freelance projects 
-                and full-time opportunities.
+                I'm a passionate software developer based in Kenya, ready to transform your business ideas into powerful digital solutions. From concept to deployment, I deliver custom web applications that drive results and enhance user experiences.
               </p>
             </div>
-            
-
           </div>
           
           <div className="space-y-6 sm:space-y-8">
