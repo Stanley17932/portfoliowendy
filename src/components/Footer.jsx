@@ -7,6 +7,7 @@ const Footer = () => {
         <p className="text-white/60">
           © 2025 Aron Kipkorir Bii. All rights reserved.
         </p>
+        <a href="/sitemap" className="text-white/60 hover:text-white">Sitemap</a>
       </div>
     </footer>
   );
