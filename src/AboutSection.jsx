@@ -14,7 +14,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-white/80 leading-relaxed">
-              I'm a passionate designer and developer based in Kenya with 1 year of professional experience. 
+              I'm a passionate soft developer and graphic designer based in Kenya. 
               I specialize in creating visually stunning graphics using CorelDRAW and building robust web applications 
               with modern technologies.
             </p>

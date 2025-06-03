@@ -12,11 +12,11 @@ const ProjectsSection = () => {
       type: "web"
     },
     {
-      title: "Litematter Enterprises",
+      title: "Litematt Enterprises",
       category: "Web Development", 
       description: "Corporate website for enterprise solutions with modern responsive design",
       tech: ["React", "CSS3", "JavaScript"],
-      link: "https://litemattenterprises.com",
+      link: "https://litemattenterprises.co.ke/",
       type: "web"
     },
     {
