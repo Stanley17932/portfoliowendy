@@ -22,7 +22,7 @@ const HeroSection = ({ scrollToSection }) => {
           <div className="relative inline-block">
             <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 mx-auto rounded-full overflow-hidden border-4 border-purple-400/70 shadow-2xl shadow-purple-500/40">
               <img
-                src="/mypic.jpeg"
+                src="/graduation.jpeg"
                 alt="Aron Kipkorir Bii"
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -55,7 +55,7 @@ const HeroSection = ({ scrollToSection }) => {
           {/* Enhanced description with better contrast */}
           <div className="bg-black/20 backdrop-blur-sm rounded-xl px-6 py-4 mb-8 sm:mb-12 max-w-xs sm:max-w-lg lg:max-w-2xl mx-auto">
             <p className="text-sm sm:text-base lg:text-lg text-white/90 leading-relaxed">
-              Creating beautiful designs and powerful web applications. Specialized in Web Development and Graphic design.
+              Creating beautiful designs and powerful web applications. Specialized in Software Development and Graphic design.
             </p>
           </div>
         </div>
