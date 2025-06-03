@@ -6,7 +6,7 @@ const ProjectsSection = () => {
     {
       title: "Billflow.site",
       category: "Web Development",
-      description: "Full-stack billing and invoice management platform built with React and Flask",
+      description: "Full-stack business management system built with React and Flask",
       tech: ["React", "Flask", "MySQL"],
       link: "https://billflow.site",
       type: "web"
@@ -30,7 +30,7 @@ const ProjectsSection = () => {
     {
       title: "AGC Tenwek Hospital CTC Logo",
       category: "Graphic Design",
-      description: "Professional logo design for Tenwek Hospital's Comprehensive Treatment Center",
+      description: "Professional logo design for Tenwek Hospital's Cardiothoracic Treatment Center",
       tech: ["CorelDRAW", "Brand Identity"],
       type: "design"
     },
