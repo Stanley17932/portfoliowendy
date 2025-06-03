@@ -123,7 +123,7 @@ const AboutSection = () => {
         setCurrentCategoryIndex((prev) => (prev + 1) % categories.length);
         setIsVisible(true);
       }, 400);
-    }, 4000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [categories.length]);
@@ -169,7 +169,6 @@ const AboutSection = () => {
 
   const currentCategory = categories[currentCategoryIndex];
   const IconComponent = currentCategory.icon;
-
   return (
     <section 
       ref={sectionRef}
