@@ -23,7 +23,7 @@ const HeroSection = ({ scrollToSection }) => {
             <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 mx-auto rounded-full overflow-hidden border-4 border-purple-400/70 shadow-2xl shadow-purple-500/40">
               <img
                 src="/grad.jpeg"
-                alt="Aron Kipkorir Bii"
+                alt="Wendy Oyonge"
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   // Fallback to a gradient background if image fails to load
@@ -41,7 +41,7 @@ const HeroSection = ({ scrollToSection }) => {
         <div className="mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
             <span className="bg-gradient-to-r from-purple-300 via-pink-300 to-purple-500 bg-clip-text text-transparent drop-shadow-lg">
-              Aron Kipkorir Bii
+              Wendy Oyonge
             </span>
           </h1>
           

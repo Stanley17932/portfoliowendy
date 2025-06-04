@@ -27,7 +27,7 @@ const ContactSection = () => {
                 href="mailto:kipkorirbiiaron@gmail.com"
                 className="text-white/70 hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base break-all sm:break-normal active:text-purple-300"
               >
-                kipkorirbiiaron@gmail.com
+                wendyoyonge@gmail.com
               </a>
             </div>
             
@@ -41,7 +41,7 @@ const ContactSection = () => {
                 href="tel:+254700697430"
                 className="text-white/70 hover:text-blue-400 transition-colors duration-300 text-sm sm:text-base active:text-blue-300"
               >
-                +254 700 697 430
+                +254 701 469 216
               </a>
             </div>
             
@@ -70,13 +70,13 @@ const ContactSection = () => {
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 max-w-md sm:max-w-none mx-auto">
                 <a
-                  href="mailto:kipkorirbiiaron@gmail.com"
+                  href="mailto:wendyoyonge@gmail.com"
                   className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 active:from-purple-800 active:to-pink-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95 text-sm sm:text-base shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black/20"
                 >
                   Get In Touch
                 </a>
                 <a
-                  href="tel:+254700697430"
+                  href="tel:+254701469216"
                   className="bg-white/10 hover:bg-white/20 active:bg-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all duration-300 border border-white/20 hover:border-white/30 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-black/20"
                 >
                   Call Now
